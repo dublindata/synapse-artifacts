@@ -1,0 +1,27 @@
+{
+	"name": "dublindata_databricks",
+	"type": "Microsoft.Synapse/workspaces/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureDatabricks",
+		"typeProperties": {
+			"domain": "https://adb-3436974546539940.0.azuredatabricks.net",
+			"authentication": "MSI",
+			"workspaceResourceId": "/subscriptions/15e27582-ac19-4362-b650-b1d92b9016c6/resourceGroups/DatabricksWorkspaces/providers/Microsoft.Databricks/workspaces/DatabricksVNETInjected",
+			"newClusterNodeType": "Standard_DS3_v2",
+			"newClusterNumOfWorker": "1",
+			"newClusterSparkEnvVars": {
+				"PYSPARK_PYTHON": "/databricks/python3/bin/python3"
+			},
+			"newClusterVersion": "18.2.x-scala2.13",
+			"newClusterDriverNodeType": "Standard_DS3_v2",
+			"clusterOption": "Fixed",
+			"newClusterInitScripts": [],
+			"dataSecurityMode": "SINGLE_USER"
+		},
+		"connectVia": {
+			"referenceName": "AutoResolveIntegrationRuntime",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

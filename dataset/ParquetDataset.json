@@ -1,0 +1,21 @@
+{
+	"name": "ParquetDataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "dublindata_adls_landingzone",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "incoming_synapse",
+				"fileSystem": "incoming"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}
