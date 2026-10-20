@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"workspaceName": {
+			"value": "dublindata-synapse"
+		},
+		"dublindata-synapse-WorkspaceDefaultSqlServer_connectionString": {
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=tcp:dublindata-synapse.sql.azuresynapse.net,1433;Initial Catalog=@{linkedService().DBName}"
+		},
+		"dublindata_sqlserver_password_password": {
+			"value": ""
+		},
+		"dublindata-synapse-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://dublindatasolutions.dfs.core.windows.net"
+		},
+		"dublindata_adls_landingzone_properties_typeProperties_url": {
+			"value": "https://dublindatasolutions.dfs.core.windows.net/"
+		},
+		"dublindata_kv_properties_typeProperties_baseUrl": {
+			"value": "https://dublindata-kv.vault.azure.net/"
+		},
+		"dublindata_sqlserver_password_properties_typeProperties_server": {
+			"value": "dublindatasolutions.database.windows.net"
+		},
+		"dublindata_sqlserver_password_properties_typeProperties_database": {
+			"value": "TestingDatabase"
+		},
+		"dublindata_sqlserver_password_properties_typeProperties_userName": {
+			"value": "dds"
+		}
+	}
+}
