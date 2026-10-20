@@ -1,6 +1,9 @@
 {
 	"name": "Charting in Synapse Notebook",
 	"properties": {
+		"folder": {
+			"name": "Notebook Folder"
+		},
 		"nbformat": 4,
 		"nbformat_minor": 2,
 		"sessionProperties": {
@@ -13,7 +16,7 @@
 				"spark.dynamicAllocation.enabled": "false",
 				"spark.dynamicAllocation.minExecutors": "2",
 				"spark.dynamicAllocation.maxExecutors": "2",
-				"spark.autotune.trackingId": "bbf45a41-508f-4e61-a036-ee169f5e3d4c"
+				"spark.autotune.trackingId": "1e62a64a-8b0b-42aa-a30e-81ef23fd6a14"
 			}
 		},
 		"metadata": {
