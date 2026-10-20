@@ -1,0 +1,10 @@
+{
+	"name": "dublindata_kv",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://dublindata-kv.vault.azure.net/"
+		}
+	}
+}
